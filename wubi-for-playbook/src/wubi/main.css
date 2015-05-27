@@ -1,0 +1,70 @@
+@charset "utf-8";
+/* CSS Document */
+body, td, th {
+	font-size: 14px;
+	font-family: Tahoma;
+}
+body {
+	margin: 0px;
+}
+#lod {
+	width: 100px;
+	margin-top: 125px;
+	margin-right: auto;
+	margin-left: auto;
+	display:block;
+	text-align:center;
+}
+.box {
+	width: 100%;
+	display:none;
+}
+.textarea {
+	border: 1px solid;
+	overflow: auto;
+	margin:0px;
+	font-size:large;
+}
+.box .box_title {
+	margin-bottom: 0px;
+	display: block;
+	overflow: hidden;
+	padding: 0px;
+	bottom: 0px;
+}
+.box .box_title .box_title_h1 {
+	font-size: x-large;
+}
+.box .box_title .box_title_sm {
+	font-size: small;
+	bottom: 0px;
+}
+.but {
+	width: 85px;
+	border: 1px solid;
+	height: 30px;
+	margin: 5px;
+}
+.bottom {
+text-align: right ;
+	bottom: 0px;
+	margin: 0px;
+	padding: 0px;
+	display:block;
+}
+.keys{
+display: inline-block;
+text-align:center;
+	width: 6.5%;
+	height:50px;
+	font-size: large;
+	border:1px solid gray;
+	margin:0px 1px;
+	padding:0px;
+}
+.line{
+	display:block;
+	width:100%;
+	margin:0px;
+	padding:0px;
+}

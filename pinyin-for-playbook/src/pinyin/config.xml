@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets"
+        xmlns:rim="http://www.blackberry.com/ns/widgets"
+        version="10.0.0.1" id="pinyin">
+	<author href="http://gplus.to/anpho" 
+          rim:copyright="Copyright 2013">anpho</author>
+	<name>Chinese PinYin IME</name>
+	<description>Chinese PinYin IME(offline).</description>
+	<rim:orientation mode="auto"/>
+	<icon src="icons/icon-86.png" />
+	<icon src="icons/icon-150.png" />
+	<content src="index.html"/>
+	<feature id="blackberry.clipboard" />
+</widget>

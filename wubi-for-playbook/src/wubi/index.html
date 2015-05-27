@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<meta content="initial-scale=1.0, user-scalable=no" name="viewport" />
+<title>Wubi IME</title>
+<link href="main.css" rel="stylesheet" type="text/css">
+<script src="ime-min.js" type="text/javascript"></script>
+<script src="wubi.js" type="text/javascript"></script>
+<script type="text/javascript">
+window.onerror =killErrors;
+window.onload=function(){
+	document.getElementById('lod').style.display="none";
+	document.getElementById('box').style.display="block";
+	BodyOnLoad();
+}
+</script>
+
+</head>
+
+<body>
+
+<div id="lod">
+	Loading</div>
+<div id="box" class="box">
+	<div class="box_title">
+		<span class="box_title_h1">Chinese Wubi IME</span>
+		<span class="box_title_sm" style="height: 16px">For BlackBerry PlayBook&#8482;
+		<input id="EnglishMode" onchange="showbtn();IME.InputArea.focus();" onfocus="IME.InputArea.focus();" type="checkbox">
+		<label for="EnglishMode">英文输入</label></span> 
+		<br>
+		<span class="bottom">
+		<span id="tips" style="height: 30px; bottom: 0px;">请切换至英文输入法并关闭输入提示及单词自动完成功能。</span>
+		<input class="but" onclick="copyCode('InputArea');emptyCode('InputArea');" type="button" value="剪切">
+		<input class="but" onclick="copyCode('InputArea');" type="button" value="复制">
+		<input class="but" onclick="emptyCode('InputArea');" type="button" value="清空">
+		</span><br></div>
+	<textarea id="Cand" class="textarea" style="display: none"></textarea> </div>
+<textarea id="InputArea" class="textarea" onkeydown="return ImeKeyDown(event)" onkeypress="return ImeKeyPress(event)" onscroll="resizeinput()" style="width: 99%; height: auto; min-height: 250px;"></textarea>
+<div id="bott" style="position: absolute; bottom: 0px; width: 98%; display: block; height: 100px; margin: 0px; padding: 0px;">
+	<span class="line">
+	<input id="Comp" onfocus="IME.InputArea.focus();" style="width: 100%; height: 1.5em; margin-bottom: 5px; font-weight: bold" type="text">
+	</span><span class="line">
+	<input id="k1" class="keys" disabled="disabled" onclick="btnclick(49)" type="button" value="1">
+	<input id="k2" class="keys" disabled="disabled" onclick="btnclick(50)" type="button" value="2">
+	<input id="k3" class="keys" disabled="disabled" onclick="btnclick(51)" type="button" value="3">
+	<input id="k4" class="keys" disabled="disabled" onclick="btnclick(52)" type="button" value="4">
+	<input id="k5" class="keys" disabled="disabled" onclick="btnclick(53)" type="button" value="5">
+	<input id="k6" class="keys" disabled="disabled" onclick="btnclick(54)" type="button" value="6">
+	<input id="k7" class="keys" disabled="disabled" onclick="btnclick(55)" type="button" value="7">
+	<input id="k8" class="keys" disabled="disabled" onclick="btnclick(56)" type="button" value="8">
+	<input id="k9" class="keys" disabled="disabled" onclick="btnclick(57)" type="button" value="9">
+	<input id="k0" class="keys" disabled="disabled" onclick="btnclick(48)" type="button" value="0">
+	<input id="pageup" class="keys" disabled="disabled" onclick="btnclick(33)" type="button" value="←">
+	<input id="pagedown" class="keys" disabled="disabled" onclick="btnclick(34)" type="button" value="→">
+	<input id="en" class="keys" onclick="toggleEnMode()" type="button" value="CH">
+	</span></div>
+</body>
+
+</html>
